@@ -11,5 +11,5 @@ func RouteSetup(app *fiber.App) {
 	app.Post("/api/register", controllers.RegisterUser)
 	app.Post("/api/login", controllers.LoginUser)
 	app.Get("/api/user", controllers.User)
-	app.Post("/api/user", controllers.Logout)
+	app.Post("/api/logout", controllers.Logout)
 }
